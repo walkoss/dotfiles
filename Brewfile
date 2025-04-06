@@ -17,11 +17,11 @@ brew "jq" # JSON processor
 brew "k6" # Load testing tool
 brew "lazygit" # Git client
 brew 'mackup' # Backup tool
+brew "mise" # MiseEnPlace
 brew "pkg-config" # https://github.com/driesvints/dotfiles/issues/20
 brew "sops" # Secrets manager
 brew "starship" # Shell prompt
 brew "terragrunt" # Terragrunt
-brew "tfenv" # Terraform version manager
 brew "thefuck" # Spell corrector
 brew "tmux" # Terminal multiplexer
 brew "wget" # Download tool
