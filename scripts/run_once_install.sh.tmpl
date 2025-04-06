@@ -1,0 +1,32 @@
+#!/bin/sh
+
+# Brewfile hash: {{ include "Brewfile" | sha256sum }}
+# This allow to rerun the script if the Brewfile has been updated
+
+echo "Install your Mac..."
+
+# Source: https://github.com/driesvints/dotfiles/blob/main/fresh.sh#L5-L16
+# Check for Oh My Zsh and install if we don't have it 
+if test ! $(which omz); then
+  /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
+fi
+
+# Check for Homebrew and install if we don't have it
+if test ! $(which brew); then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# Update Homebrew recipes
+brew update
+
+# Install all our dependencies with bundle (See Brewfile)
+brew bundle --file {{ .chezmoi.sourceDir }}/Brewfile
+
+# Create a projects directories
+mkdir -p $HOME/Workspace/{{ .work.name }}
+
+# Set MacOS preferences
+source {{ .chezmoi.sourceDir }}/.macos

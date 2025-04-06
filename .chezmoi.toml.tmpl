@@ -1,0 +1,14 @@
+{{- $git_email := promptStringOnce . "git_email" "Git work email address" -}}
+{{- $git_name := promptStringOnce . "git_name" "Git work name" -}}
+{{- $companyName := promptStringOnce . "company_name" "Company name" -}}
+
+[data.git.perso]
+    email = "walkoss@pm.me"
+    name = "Walid"
+
+[data.git.work]
+    email = {{ $git_email | quote }}
+    name = {{ $git_name | quote }}
+
+[data.work]
+    name = {{ $companyName | quote }}

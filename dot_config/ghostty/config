@@ -1,0 +1,5 @@
+macos-titlebar-style = hidden
+macos-titlebar-proxy-icon = hidden
+cursor-style = bar
+theme = MaterialDarker
+font-size = 18

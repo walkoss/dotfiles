@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Create .gitconfig file
+echo "Setting up Git configuration for work..."
+
+# Create a projects directories
+mkdir -p $HOME/Workspace/{{ .work.name }}
+
+# Create the .gitconfig file
+cat > $HOME/Workspace/{{ .work.name }}/.gitconfig << EOF
+[user]
+    email = {{ .git.work.email }}
+    name = {{ .git.work.name }}
+EOF
+
+echo "Git configuration has been set up successfully!"

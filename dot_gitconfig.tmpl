@@ -1,0 +1,9 @@
+[user]
+	email = {{ .git.perso.email }}
+	name = {{ .git.perso.name }}
+
+[init]
+	defaultBranch = main
+
+[includeIf "gitdir:~/Workspace/{{ .work.name }}/"]
+	path = ~/Workspace/{{ .work.name }}/.gitconfig
