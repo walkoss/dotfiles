@@ -5,7 +5,9 @@
 # Available commands: https://nikitabobko.github.io/AeroSpace/commands
 after-login-command = []
 
-# after-startup-command = ['exec-and-forget sketchybar']
+after-startup-command = [
+  'exec-and-forget borders'
+]
 
 # # Notify Sketchybar about workspace change
 # exec-on-workspace-change = ['/bin/bash', '-c',
