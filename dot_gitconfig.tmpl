@@ -1,9 +1,21 @@
 [user]
-	email = {{ .git.perso.email }}
-	name = {{ .git.perso.name }}
+	email = {{ .git.work.email }}
+	name = {{ .git.work.name }}
 
 [init]
 	defaultBranch = main
 
-[includeIf "gitdir:~/Workspace/{{ .work.name }}/"]
-	path = ~/Workspace/{{ .work.name }}/.gitconfig
+[commit]
+	gpgSign = true
+
+[core]
+	editor = "code --wait"
+
+[rebase]
+	updateRefs = true
+
+[includeIf "gitdir:{{ .work.directory }}/"]
+	path = {{ .work.directory }}/.gitconfig
+
+[url "git@github.com:"]
+    insteadOf = https://github.com/

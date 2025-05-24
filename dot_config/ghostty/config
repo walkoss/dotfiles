@@ -3,3 +3,4 @@ macos-titlebar-proxy-icon = hidden
 cursor-style = bar
 theme = MaterialDarker
 font-size = 18
+macos-option-as-alt = left

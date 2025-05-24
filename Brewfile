@@ -7,6 +7,7 @@ brew "act" # GitHub Actions runner
 brew "argocd" # ArgoCD
 brew "bat" # cat clone with syntax highlighting
 brew "bitwarden-cli" # Password manager
+brew "bluesnooze" # No more bluetooth on sleep mode
 brew "FelixKratz/formulae/borders" # borders
 brew "chezmoi" # Dotfiles manager
 brew "coreutils" # Those that come with macOS are outdated
@@ -14,9 +15,11 @@ brew "ffmpeg" # Video/audio converter
 brew "fzf" # Fuzzy finder
 brew "git"
 brew "grep"
+brew "grpcurl" # gRPC client
 brew "htop" # Process viewer
 brew "jq" # JSON processor
 brew "k6" # Load testing tool
+brew "kubectx" # Kubernetes context manager
 brew "lazygit" # Git client
 brew 'mackup' # Backup tool
 brew "mise" # MiseEnPlace
@@ -25,7 +28,9 @@ brew "sops" # Secrets manager
 brew "starship" # Shell prompt
 brew "terragrunt" # Terragrunt
 brew "thefuck" # Spell corrector
+brew "tflint" # Terraform linter
 brew "tmux" # Terminal multiplexer
+brew "uv" # Python package manager
 brew "wget" # Download tool
 brew "yamlfmt" # YAML formatter
 brew "yamllint" # YAML linter
@@ -36,6 +41,7 @@ brew "zsh-syntax-highlighting" # Shell syntax highlighting
 
 # Apps
 cask "aerospace"
+cask "betterdisplay"
 cask "bitwarden"
 cask "caffeine"
 cask "cursor"
@@ -62,7 +68,6 @@ cask "vlc"
 # vscode "dbaeumer.vscode-eslint"
 # vscode "dorzey.vscode-sqlfluff"
 # vscode "eamodio.gitlens"
-# vscode "equinusocio.vsc-material-theme"
 # vscode "esbenp.prettier-vscode"
 # vscode "github.vscode-pull-request-github"
 # vscode "hashicorp.terraform"
@@ -86,7 +91,6 @@ cask "vlc"
 # vscode "ms-vscode.powershell"
 # vscode "ms-vsliveshare.vsliveshare"
 # vscode "njpwerner.autodocstring"
-# vscode "pkief.material-icon-theme"
 # vscode "postman.postman-for-vscode"
 # vscode "signageos.signageos-vscode-sops"
 # vscode "tamasfe.even-better-toml"

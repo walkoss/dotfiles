@@ -20,6 +20,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 export EDITOR="code --wait"
+export XDG_CONFIG_HOME=$HOME/.config
 
 ## Starship prompt
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
