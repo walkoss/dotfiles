@@ -1,3 +1,5 @@
+alias ls="ls --color=auto"
+
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias reloadshell="omz reload"
