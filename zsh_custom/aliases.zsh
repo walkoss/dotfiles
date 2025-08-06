@@ -4,6 +4,7 @@ alias ls="ls --color=auto"
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias reloadshell="omz reload"
 alias cm="chezmoi"
+alias c="claude"
 
 # Directories
 alias dotfiles="cd $DOTFILES"

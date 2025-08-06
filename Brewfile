@@ -7,7 +7,6 @@ brew "act" # GitHub Actions runner
 brew "argocd" # ArgoCD
 brew "bat" # cat clone with syntax highlighting
 brew "bitwarden-cli" # Password manager
-brew "bluesnooze" # No more bluetooth on sleep mode
 brew "FelixKratz/formulae/borders" # borders
 brew "chezmoi" # Dotfiles manager
 brew "crane" # Crane
@@ -15,11 +14,15 @@ brew "coreutils" # Those that come with macOS are outdated
 brew "ffmpeg" # Video/audio converter
 brew "fzf" # Fuzzy finder
 brew "git"
+brew "gh" # GitHub CLI
 brew "grep"
 brew "grpcurl" # gRPC client
+brew "golang" # Go language
 brew "htop" # Process viewer
+brew "httpie" # HTTP client
 brew "jq" # JSON processor
 brew "k6" # Load testing tool
+brew "derailed/k9s/k9s" # Kubernetes CLI
 brew "kubectx" # Kubernetes context manager
 brew "lazygit" # Git client
 brew 'mackup' # Backup tool
@@ -44,8 +47,11 @@ brew "zsh-syntax-highlighting" # Shell syntax highlighting
 # Apps
 cask "aerospace"
 cask "betterdisplay"
+cask "bluesnooze" # No more bluetooth on sleep mode
 cask "bitwarden"
 cask "caffeine"
+cask "chatgpt"
+cask "claude-code"
 cask "cursor"
 cask "datagrip"
 cask "discord"

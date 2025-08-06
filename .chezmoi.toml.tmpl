@@ -1,7 +1,6 @@
 {{- $git_email := promptStringOnce . "git_email" "Git work email address" -}}
 {{- $git_name := promptStringOnce . "git_name" "Git work name" -}}
 {{- $companyName := promptStringOnce . "company_name" "Company name" -}}
-{{- $companyWorkspaceDirectory := promptStringOnce . "companyWorkspaceDirectory" "Enter work dir (e.g. ~/Workspace/CompanyName)" -}}
 
 [data.git.perso]
     email = "walkoss@pm.me"
@@ -13,4 +12,3 @@
 
 [data.work]
     name = {{ $companyName | quote }}
-    directory = {{ $companyWorkspaceDirectory | quote }}

@@ -14,8 +14,7 @@
 [rebase]
 	updateRefs = true
 
-[includeIf "gitdir:{{ .work.directory }}/"]
-	path = {{ .work.directory }}/.gitconfig
-
 [url "git@github.com:"]
     insteadOf = https://github.com/
+
+{{ include "custom_gitconfig" }}

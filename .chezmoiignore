@@ -1,3 +1,4 @@
 Brewfile
 .macos
 zsh_custom
+custom_gitconfig

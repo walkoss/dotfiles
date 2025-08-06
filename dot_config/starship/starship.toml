@@ -13,28 +13,28 @@ $character"""
 command_timeout = 10000
 
 [directory]
-style = "blue"
+style = "#82aaff"
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[❯](#c792ea)"
+error_symbol = "[❯](#ff5370)"
+vimcmd_symbol = "[❮](#c3e88d)"
 
 [git_branch]
 format = "[$branch]($style) "
-style = "bright-black"
+style = "#545454"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
+style = "#545454"
 
 [cmd_duration]
 format = "[$duration]($style) "
-style = "yellow"
+style = "#ffcb6b"
 
 [python]
 format = "[$virtualenv]($style) "
-style = "bright-black"
+style = "#545454"
 
 [kubernetes]
 disabled = false
