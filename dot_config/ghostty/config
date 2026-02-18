@@ -1,6 +1,8 @@
 macos-titlebar-style = hidden
 macos-titlebar-proxy-icon = hidden
 cursor-style = bar
-theme = MaterialDarker
-font-size = 16
+theme = Catppuccin Mocha
+font-size = 14
+font-family = "JetBrains Nerd Font Mono"
 macos-option-as-alt = left
+keybind = shift+enter=text:\x1b\r

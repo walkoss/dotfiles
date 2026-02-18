@@ -4,14 +4,19 @@ tap "FelixKratz/formulae" # borders
 
 # Binaries
 brew "act" # GitHub Actions runner
+brew "asheshgoplani/tap/agent-deck" # Agent Deck
 brew "argocd" # ArgoCD
+brew "atuin" # Shell history manager
 brew "bat" # cat clone with syntax highlighting
+brew "btop" # Resource monitor (htop alternative)
+brew "ncdu" # Disk usage analyzer with ncurses UI
 brew "bitwarden-cli" # Password manager
 brew "FelixKratz/formulae/borders" # borders
 brew "chezmoi" # Dotfiles manager
 brew "crane" # Crane
 brew "coreutils" # Those that come with macOS are outdated
 brew "ffmpeg" # Video/audio converter
+brew "fd" # Fast directory finder
 brew "fzf" # Fuzzy finder
 brew "git"
 brew "gh" # GitHub CLI
@@ -27,6 +32,8 @@ brew "kubectx" # Kubernetes context manager
 brew "lazygit" # Git client
 brew 'mackup' # Backup tool
 brew "mise" # MiseEnPlace
+brew "neovim" # Neovim
+brew "ripgrep" # Fast grep (required by LazyVim)
 brew "pkg-config" # https://github.com/driesvints/dotfiles/issues/20
 brew "sops" # Secrets manager
 brew "starship" # Shell prompt
@@ -35,6 +42,7 @@ brew "terraform-ls" # Terraform language server
 brew "thefuck" # Spell corrector
 brew "tflint" # Terraform linter
 brew "tmux" # Terminal multiplexer
+brew "tree-sitter" # Tree-sitter parser
 brew "uv" # Python package manager
 brew "wget" # Download tool
 brew "yamlfmt" # YAML formatter
@@ -59,11 +67,12 @@ cask "font-menlo-for-powerline"
 cask "font-hack-nerd-font"
 cask "freelens"
 cask "ghostty"
-cask "google-cloud-sdk"
+cask "gcloud-cli"
 cask "google-chrome"
 cask "jordanbaird-ice"
 cask "loom"
 cask "orbstack"
+cask "obsidian"
 cask "raycast"
 cask "slack"
 cask "spotify"

@@ -13,29 +13,33 @@ $character"""
 command_timeout = 10000
 
 [directory]
-style = "#82aaff"
+style = "blue"
 
 [character]
-success_symbol = "[❯](#c792ea)"
-error_symbol = "[❯](#ff5370)"
-vimcmd_symbol = "[❮](#c3e88d)"
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
 
 [git_branch]
 format = "[$branch]($style) "
-style = "#545454"
+style = "bright black"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "#545454"
+style = "bright black"
 
 [cmd_duration]
 format = "[$duration]($style) "
-style = "#ffcb6b"
+style = "yellow"
 
 [python]
 format = "[$virtualenv]($style) "
-style = "#545454"
+style = "bright black"
 
 [kubernetes]
 disabled = false
 format = '[$symbol$context( \($namespace\))]($style) '
+contexts = [
+  { context_pattern = "(?P<name>.+\\.staging\\..+)", context_alias = "$name" },
+  { context_pattern = "(?P<name>.+\\.prod\\..+)", context_alias = "$name", style = "red" },
+]

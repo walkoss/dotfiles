@@ -6,6 +6,7 @@ k9s:
   noExitOnCtrlC: false
   portForwardAddress: localhost
   ui:
+    skin: catppuccin-mocha
     enableMouse: true
     headless: false
     logoless: true

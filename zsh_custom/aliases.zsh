@@ -5,6 +5,8 @@ alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias reloadshell="omz reload"
 alias cm="chezmoi"
 alias c="claude"
+alias ad="agent-deck"
+alias n="nvim"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
